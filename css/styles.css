@@ -1,0 +1,346 @@
+body {
+  font-family: "Open Sans";
+}
+
+/*NAVIGATION BAR*/
+#navigation-menu {
+  background-color: transparent;
+}
+
+.navigation-bar {
+  padding: 25px !important;
+  background-color: #0000001a;
+  transition: all 0.5s;
+}
+
+.navigation-bar.scrolled {
+  padding: 15px !important;
+  background-color: black;
+}
+
+.logo {
+  width: 4%;
+}
+
+.ro-ru-elements {
+  color: #ffffff;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.ro-ru-elements:hover {
+  text-decoration: none;
+  color: #ec9b3b;
+}
+
+.left-nav-elements {
+  font-size: 16px;
+}
+
+.left-nav-items {
+  margin-right: 12px;
+  color: #ffffff;
+}
+
+.left-nav-items:hover {
+  color: #ec9b3b;
+}
+
+.top-button {
+  border-radius: 25px;
+  font-size: 13px;
+  border: none;
+  padding: 0 40px;
+  color: black;
+  background-color: white;
+  height: 29px;
+  margin-top: 6px;
+}
+
+.top-button:hover {
+  border-radius: 25px;
+  font-size: 13px;
+  border: none;
+  padding: 0 40px;
+  color: black;
+  background-color: #ec9b3b;
+  height: 29px;
+  margin-top: 6px;
+}
+
+.phone-image {
+  width: 17px;
+  margin-right: 4px;
+}
+
+#welcome-part {
+  background-image: url("../images/venezia.jpg");
+  height: 100vh;
+  background-size: cover;
+  padding: 270px;
+  position: relative;
+}
+
+.big-heading {
+  font-family: "Oswald";
+  font-size: 110px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase;
+}
+
+.big-message {
+  font-family: "Oswald";
+  font-size: 25px;
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: lowercase;
+  border-bottom: 1px solid;
+  padding: 18px;
+}
+
+.welcome-button {
+  border-radius: 50%;
+  padding: 11px 16px;
+  position: absolute;
+  bottom: 15px;
+  background-color: white;
+  border: none;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1rem 3rem #212529;
+  transition: all 0.1s;
+}
+
+.welcome-button:hover {
+  padding: 12px 17px;
+  box-shadow: 0 1rem 2rem #212529;
+  bottom: 13px;
+}
+
+.welcome-icon {
+  width: 15px;
+}
+
+/*OFFERS HEADING*/
+.offer-title {
+  padding: 54px;
+  text-align: center;
+}
+
+.offer-title h2 {
+  font-weight: 700;
+}
+
+.offer-title p {
+  font-size: 17px;
+  font-style: italic;
+  color: #ffaa01;
+  text-transform: uppercase;
+}
+
+/*BEST OFFERS*/
+.card-part {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 !important;
+}
+
+.offer-card {
+  position: relative;
+  background-image: url("../images/spain.jpg");
+  background-size: cover;
+  height: 350px;
+}
+
+.offer-text {
+  background-color: #00000057;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 77px;
+  padding: 0 14px;
+}
+
+.offer-card:hover .offer-text {
+  background-color: #ec9b3b;
+}
+
+.right-part-text {
+  padding: 4px 8px;
+  text-align: right;
+}
+
+.right-part-text h3 {
+  font-size: 22px;
+}
+
+.right-part-text p {
+  margin-bottom: 9px;
+}
+
+.left-part-text {
+  padding-top: 5px;
+  padding-left: 4px;
+}
+
+.left-part-text h5 {
+  font-family: "Montserrat";
+  font-style: italic;
+}
+
+.left-part-text h3 {
+  font-size: 21px;
+}
+
+/*COUNTRIES HEADING*/
+.countries-title {
+  padding: 75px 0 30px;
+  text-align: center;
+}
+
+.countries-title h2 {
+  font-weight: 700;
+}
+
+/*CAROUSEL*/
+.countries {
+  padding: 50px;
+}
+
+.countries-image {
+  border-radius: 50%;
+  width: auto;
+  background-size: cover;
+}
+
+/*WHY-CGOOSE-US-HEADING*/
+.why-choose-us-title {
+  text-align: center;
+  padding: 95px 0 37px;
+}
+
+.why-choose-us-title h2 {
+  font-weight: 700;
+}
+
+/*WHY-CGOOSE-US*/
+.why-choose-us-cards {
+  margin: auto;
+}
+
+.info-cards {
+  padding: 20px;
+  margin: 80px 20px;
+  background-color: transparent;
+  border: solid;
+  border-color: #ec9b3b;
+  border-width: 1px;
+}
+
+.circle {
+  background-color: #ec9b3b;
+  border: 1px solid;
+  padding: 10px;
+  text-align: center;
+  width: 74px;
+  height: 74px;
+  margin: auto;
+  position: relative;
+  margin-top: -60px;
+  color: white;
+  border-radius: 35px;
+}
+
+.circle-numbers {
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.circle-numbers img {
+  height: 40px;
+}
+
+.cards-content {
+  padding: 0;
+  padding-top: 30px;
+}
+
+.cards-content h5 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+  color: #222222;
+}
+
+/*MAP HEADING*/
+.map-title {
+  text-align: center;
+  padding: 95px 0 40px;
+}
+
+.map-title h2 {
+  font-weight: 700;
+}
+
+/*MAP*/
+.map-part {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ask-form {
+  padding: 20px 20px 0;
+}
+
+.form-title {
+  text-align: center;
+}
+
+.form-title h4 {
+  font-weight: 600;
+}
+
+.form-button {
+  margin-top: 20px;
+}
+
+.confidential {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.frame-title {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.frame-title h4 {
+  font-weight: 600;
+}
+
+/*FOOTER*/
+.footer-part {
+  text-align: center;
+  padding: 75px 0;
+}
+
+.footer-icons {
+  padding: 20px 7px 10px;
+}
+
+.display-blue {
+  color: black;
+}
+
+.display-blue:hover {
+  text-decoration: none;
+  color: #ec9b3b;
+}
