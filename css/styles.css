@@ -154,7 +154,7 @@ body {
 
 /*OFFERS HEADING*/
 .offer-title {
-  padding: 54px;
+  padding: 83px 0;
   text-align: center;
 }
 
@@ -225,6 +225,10 @@ body {
 }
 
 /*COUNTRIES HEADING*/
+#countries {
+  padding-bottom: 90px;
+}
+
 .countries-title {
   padding: 75px 0 30px;
   text-align: center;
@@ -252,7 +256,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 50px;
+  font-size: 40px;
+  font-weight: 600;
 }
 
 /*WHY-CGOOSE-US-HEADING*/
