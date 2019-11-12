@@ -129,27 +129,6 @@ body {
 }
 
 /*FIXED BUTTON*/
-.welcome-button-right button {
-  border: none;
-  font-size: 13px;
-  border-radius: 70px;
-  font-weight: 600;
-  width: 89px;
-  height: 89px;
-  color: #FFFFFF;
-  background: #2D9CDB;
-  margin: 12px;
-  text-align: center;
-}
-
-.welcome-button-right-active:hover {
-  border-radius: 70px;
-  width: 89px;
-  height: 89px;
-  color: #2D9CDB;
-  background: #FFFFFF;
-}
-
 #beingSalesButton {
   position: fixed;
   bottom: 30px;
@@ -268,6 +247,7 @@ body {
 
 /*WHY-CGOOSE-US-HEADING*/
 .why-choose-us-title {
+  color: white;
   text-align: center;
   padding: 95px 0 37px;
 }
@@ -278,21 +258,21 @@ body {
 
 /*WHY-CGOOSE-US*/
 .why-choose-us-cards {
+  padding: 0px 12px 110px;
   margin: auto;
 }
 
 .info-cards {
+  background-color: white;
+  border: none;
   padding: 20px;
   margin: 80px 20px;
-  background-color: transparent;
-  border: solid;
-  border-color: #ec9b3b;
-  border-width: 1px;
+  padding-bottom: 0;
+  height: 190px;
 }
 
 .circle {
   background-color: #ec9b3b;
-  border: 1px solid;
   padding: 10px;
   text-align: center;
   width: 74px;
@@ -323,6 +303,18 @@ body {
   font-weight: 600;
   font-size: 22px;
   color: #222222;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('../images/climbing.jpg');
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*MAP HEADING*/
@@ -358,6 +350,7 @@ body {
 }
 
 .form-button {
+  color: white;
   margin-top: 20px;
 }
 
