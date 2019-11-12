@@ -7,8 +7,9 @@ function makeApiCall() {
   };
   var request = gapi.client.sheets.spreadsheets.values.get(params);
   request.then(function(response) {
-    // TODO: Change code below to process the `response` object:
-    console.log(response.result.values);
+    response.result.values.forEach(function(value) {
+      appendOffer(value);
+    });
   }, function(reason) {
     console.error('error: ' + reason.result.error.message);
   });
