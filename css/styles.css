@@ -349,6 +349,22 @@ body {
   background-size: cover;
 }
 
+/*FEEDBACK*/
+
+.feedback {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.icon-type {
+  margin: auto;
+  width: 30px;
+}
+
+.client-card {
+  text-align: center;
+}
+
 /*MAP HEADING*/
 #map-heading {
   color: #ffaa01;
