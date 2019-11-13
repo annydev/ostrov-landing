@@ -7,7 +7,9 @@ function makeApiCall() {
   };
   var request = gapi.client.sheets.spreadsheets.values.get(params);
   request.then(function(response) {
-    prepareOffers(response.result.values);
+    response.result.values.forEach(function(value) {
+      appendOffer(value);
+    });
   }, function(reason) {
     console.error('error: ' + reason.result.error.message);
   });

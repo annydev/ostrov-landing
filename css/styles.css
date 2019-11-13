@@ -153,11 +153,6 @@ body {
 }
 
 /*OFFERS HEADING*/
-#offers-heading {
-  color: #ffaa01;
-  background-color: #222222;
-}
-
 .offer-title {
   padding: 83px 0;
   text-align: center;
@@ -175,10 +170,6 @@ body {
 }
 
 /*BEST OFFERS*/
-#best-offers {
-  background-color: #222222;
-}
-
 .card-part {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -187,9 +178,9 @@ body {
 
 .offer-card {
   position: relative;
+  background-image: url("../images/spain.jpg");
   background-size: cover;
   height: 350px;
-  margin: 2px;
 }
 
 .offer-text {
@@ -234,14 +225,7 @@ body {
 }
 
 /*COUNTRIES HEADING*/
-#countries-heading {
-  color: #ffaa01;
-  background-color: #222222;
-}
-
 #countries {
-  color: #ffaa01;
-  background-color: #222222;
   padding-bottom: 90px;
 }
 
@@ -366,11 +350,6 @@ body {
 }
 
 /*MAP HEADING*/
-#map-heading {
-  color: #ffaa01;
-  background-color: #222222;
-}
-
 .map-title {
   text-align: center;
   padding: 95px 0 67px;
@@ -382,8 +361,6 @@ body {
 
 /*MAP*/
 #map {
-  color: #ffaa01;
-  background-color: #222222;
   padding-bottom: 70px;
 }
 
