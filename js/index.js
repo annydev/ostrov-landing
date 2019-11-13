@@ -78,3 +78,21 @@ function appendOffer(value){
 
   adjustCards();
 }
+
+function prepareOffers(values) {
+  $("#best-offers .card-part").html("");
+
+  values.forEach(function(value) {
+    appendOffer(value);
+  });
+}
+
+function addCardsForTest() {
+  prepareOffers([
+    ["10.11.19", "Spain", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
+    ["10.11.19", "Spain", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
+    ["10.11.19", "Spain", "Title", "9 days", "3000$", "images/countries/spain.jpg"] 
+  ]);
+}
+
+addCardsForTest();
