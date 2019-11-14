@@ -92,6 +92,8 @@ function addCardsForTest() {
     ["10.11.19", "Spain", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
     ["10.11.19", "Spain", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
     ["10.11.19", "Spain", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
+    ["10.11.19", "Spain", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
+    ["10.11.19", "Spain", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
     ["10.11.19", "Spain", "Title", "9 days", "3000$", "images/countries/spain.jpg"]
   ]);
 }

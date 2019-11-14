@@ -181,7 +181,7 @@ body {
   position: relative;
   background-size: cover;
   height: 350px;
-  margin: 12px 2px 84px;
+  margin: 3px;
 }
 
 .offer-text {
@@ -544,6 +544,7 @@ body {
   width: 28%;
   margin: auto;
   margin-bottom: 70px;
+  margin-top: 89px;
 }
 
 .divider-feed-up {
