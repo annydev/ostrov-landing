@@ -99,3 +99,7 @@ function addCardsForTest() {
 }
 
 addCardsForTest();
+
+$(".offer-card").click(function() {
+  $(".offer-card").toggleClass("opened");
+});
