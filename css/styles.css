@@ -167,20 +167,21 @@ body {
   font-style: italic;
   color: #ffaa01;
   text-transform: uppercase;
+  margin-bottom: 23px;
 }
 
 /*BEST OFFERS*/
 .card-part {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 0 !important;
 }
 
 .offer-card {
   position: relative;
-  background-image: url("../images/spain.jpg");
   background-size: cover;
   height: 350px;
+  margin: 12px 2px 84px;
 }
 
 .offer-text {
@@ -226,6 +227,7 @@ body {
 
 /*COUNTRIES HEADING*/
 #countries {
+  padding-top: 52px;
   padding-bottom: 90px;
 }
 
@@ -235,10 +237,15 @@ body {
 }
 
 .countries-title h2 {
+  margin-bottom: 30px;
   font-weight: 700;
 }
 
 /*CAROUSEL*/
+.top-content {
+  margin-bottom: 97px;
+}
+
 .countries {
   padding: 50px;
 }
@@ -333,24 +340,76 @@ body {
   background-size: cover;
 }
 
+.parallax-none-text {
+  /* The image used */
+  background-image: url('../images/island.jpg');
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.none-text {
+  height: 400px;
+}
+
 /*FEEDBACK*/
+#clients-feedback {
+  background-color: #eeeeee;
+  padding-bottom: 74px;
+}
+
+.heading-feedback {
+  text-align: center;
+  padding: 100px 0 35px;
+}
+
+.heading-feedback h2 {
+  margin-bottom: 30px;
+  font-weight: 700;
+}
 
 .feedback {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 69px;
 }
 
 .icon-type {
+  padding-bottom: 20px;
   margin: auto;
   width: 30px;
 }
 
 .client-card {
+  padding: 17px;
+  margin-right: 20px;
   text-align: center;
 }
 
+.client-photo {
+  padding-bottom: 12px;
+}
+
+.client-round-image {
+  border-radius: 50%;
+}
+
+.client-icon-fab {
+  height: 22px;
+  margin-right: 6px;
+}
+
 /*MAP HEADING*/
+#map-heading {
+  color: white;
+}
+
 .map-title {
+  color: white;
   text-align: center;
   padding: 95px 0 67px;
 }
@@ -361,6 +420,7 @@ body {
 
 /*MAP*/
 #map {
+  background-image: url("../images/map-ground.jpg");
   padding-bottom: 70px;
 }
 
@@ -374,6 +434,7 @@ body {
 }
 
 .form-title {
+  color: white;
   text-align: center;
 }
 
@@ -392,6 +453,7 @@ body {
 }
 
 .frame-title {
+  color: white;
   margin-bottom: 25px;
   text-align: center;
 }
@@ -458,4 +520,110 @@ body {
 .footer-button:hover {
   padding: 12px 17px;
   box-shadow: 0 1rem 2rem #212529;
+}
+
+/*DIVIDERS*/
+.divider {
+  position: relative;
+  height: 1px;
+  width: 28%;
+  margin: auto;
+}
+
+.divider-feed {
+  position: relative;
+  height: 1px;
+  width: 28%;
+  margin: auto;
+  padding-bottom: 38px;
+}
+
+.divider-up {
+  position: relative;
+  height: 1px;
+  width: 28%;
+  margin: auto;
+  margin-bottom: 70px;
+}
+
+.divider-feed-up {
+  position: relative;
+  height: 1px;
+  width: 28%;
+  margin: auto;
+  margin-bottom: 26px;
+}
+
+.divider-up-countries {
+  position: relative;
+  height: 1px;
+  width: 28%;
+  margin: auto;
+}
+
+.div-transparent:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 4px;
+  background-image: linear-gradient(to right, transparent, #ec9b3b, transparent);
+}
+
+.div-arrow-down:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: calc(50% - 7px);
+  width: 14px;
+  height: 14px;
+  transform: rotate(45deg);
+  background-color: white;
+  border-bottom: 2px solid #ec9b3b;
+  border-right: 2px solid #ec9b3b;
+}
+
+.div-arrow-down-feed:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: calc(50% - 7px);
+  width: 14px;
+  height: 14px;
+  transform: rotate(45deg);
+  background-color: #eeeeee;
+  border-bottom: 2px solid #ec9b3b;
+  border-right: 2px solid #ec9b3b;
+}
+
+.div-arrow-down-up:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: calc(50% - 7px);
+  width: 14px;
+  height: 14px;
+  transform: rotate(223deg);
+  background-color: white;
+  border-bottom: 2px solid #ec9b3b;
+  border-right: 2px solid #ec9b3b;
+}
+
+.div-arrow-down-feed-up:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: calc(50% - 7px);
+  width: 14px;
+  height: 14px;
+  transform: rotate(223deg);
+  background-color: #eeeeee;
+  border-bottom: 2px solid #ec9b3b;
+  border-right: 2px solid #ec9b3b;
 }
