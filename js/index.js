@@ -65,7 +65,7 @@ if (window.location.hash) {
   scrollToAnchor(window.location.hash);
 }
 
-function appendOffer(value){
+function appendOffer(value) {
   var newOffer = $($("#offersTemplate").html());
 
   newOffer.find(".best-offer-country").html(value[1]);
@@ -101,5 +101,5 @@ function addCardsForTest() {
 addCardsForTest();
 
 $(".offer-card").click(function() {
-  $(".offer-card").toggleClass("opened");
+  var cardClass = $(this).toggleClass("opened");
 });
