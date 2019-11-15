@@ -451,6 +451,7 @@ body {
 .confidential {
   font-size: 12px;
   font-style: italic;
+  color: white;
 }
 
 .frame-title {

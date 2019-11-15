@@ -1,13 +1,193 @@
-@media only screen and (max-device-width: 768px) {
+@media (min-width: 320px) and (max-width: 767px) {
 
   /*NAVIGATION BAR*/
+  .logo {
+    width: 16%;
+  }
+
+  .burger-icon {
+    width: 32px;
+  }
+
+  .burger-button {
+    outline: none;
+    padding-left: 105px;
+  }
+
   .ro-ru-elements {
-    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .navigation-bar {
+    padding: 17px !important;
+  }
+
+  .left-nav-elements {
+    text-align: center;
+    padding: 34px;
+  }
+
+  .left-nav-items {
+    margin-right: 0;
+  }
+
+  .top-button {
+    margin-top: 21px;
+  }
+
+  .top-button:hover {
+    margin-top: 21px;
   }
 
   /*WELCOME-PART*/
-  .big-heading {
-    font-size: 55px;
-    padding: 114px 30px 251px;
+  #welcome-part {
+    padding: 0;
   }
-}
+
+  /*OFFERS-HEADING*/
+  #offers-heading {
+    padding: 12px;
+  }
+
+  .offer-title {
+    padding: 40px 0;
+  }
+
+  .offer-title h2 {
+    font-size: 25px;
+  }
+
+  .offer-title p {
+    font-size: 13px;
+  }
+
+  /*CARD-PART*/
+  .card-part {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .offer-card {
+    height: 400px;
+  }
+
+  .divider-up {
+    margin-bottom: 50px;
+    margin-top: 59px;
+  }
+
+  /*WHY-CHOOSE-US*/
+  .why-choose-us-title {
+    padding: 85px 18px 37px;
+  }
+
+  .why-choose-us-title h2 {
+    font-size: 25px;
+  }
+
+  .why-choose-us-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .info-cards {
+    padding: 20px;
+    margin: 51px 8px;
+    height: 148px;
+  }
+
+  .cards-content h5 {
+    font-size: 15px;
+  }
+
+  /*FEEDBACK*/
+  .heading-feedback {
+    padding: 77px 12px 19px;
+  }
+
+  .heading-feedback h2 {
+    font-size: 25px;
+  }
+
+  .feedback {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+
+  .client-card {
+    margin-right: 0;
+  }
+
+  .icon-type {
+    width: 24px;
+  }
+
+  #clients-feedback {
+    padding-bottom: 30px;
+  }
+
+  /*COUNTRIES*/
+  .countries-title {
+    padding: 64px 12px 30px;
+  }
+
+  .countries-title h2 {
+    font-size: 25px;
+  }
+
+  .countries-image {
+    margin: auto;
+    width: 200px;
+  }
+
+  .country-name {
+    font-size: 30px;
+  }
+
+  /*MAP*/
+  .map-title {
+    padding: 95px 12px 67px;
+  }
+
+  .map-title h2 {
+    font-size: 25px;
+  }
+
+  .map-part {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .send-button {
+    text-align: center;
+  }
+
+  .form-button {
+    padding: 8px 35px;
+    font-size: 14px;
+  }
+
+  .frame {
+    width: 100%;
+  }
+
+  .map-frame {
+    padding-top: 50px;
+  }
+
+  /*FOOTER*/
+  #footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 96px 51px;
+  }
+
+  .footer-content {
+    padding-bottom: 40px;
+  }
+
+  /*COPYRIGHT*/
+  #copyright {
+    font-size: 12px;
+  }

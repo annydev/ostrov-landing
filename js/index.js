@@ -73,6 +73,8 @@ function appendOffer(value) {
   newOffer.find(".best-offer-days").html(value[3]);
   newOffer.find(".best-offer-price").html(value[4]);
   newOffer.attr("style", "background-image:" + "url(" + value[5] + ")");
+  newOffer.find(".description-title").html(value[6]);
+  newOffer.find(".description-body").html(value[7]);
 
   $("#best-offers .card-part").append(newOffer);
 
@@ -89,7 +91,7 @@ function prepareOffers(values) {
 
 function addCardsForTest() {
   prepareOffers([
-    ["10.11.19", "Spain", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
+    ["10.11.19", "Spain", "Title", "9 days", "3000$", "images/countries/spain.jpg", "Head", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."],
     ["10.11.19", "Spain", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
     ["10.11.19", "Spain", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
     ["10.11.19", "Spain", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
