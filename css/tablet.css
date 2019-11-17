@@ -1,0 +1,35 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /*NAVIGATION BAR*/
+  .logo {
+    width: 14%;
+  }
+
+  .ro-ru-elements {
+    font-size: 34px;
+  }
+
+  .burger-icon {
+    width: 40px;
+  }
+
+  .burger-button {
+    padding-left: 279px;
+  }
+
+  .burger-button:hover {
+    outline: none;
+  }
+
+  .left-nav-elements {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .left-nav-items {
+    margin-bottom: 11px;
+    margin-right: 0;
+  }
+}
