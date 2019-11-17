@@ -10,8 +10,11 @@
   }
 
   .burger-button {
-    outline: none;
     padding-left: 105px;
+  }
+
+  .burger-button:hover {
+    outline: none;
   }
 
   .ro-ru-elements {
@@ -42,6 +45,17 @@
   /*WELCOME-PART*/
   #welcome-part {
     padding: 0;
+  }
+
+  .welcome-button {
+    margin-bottom: 24px;
+  }
+
+  #beingSalesButton {
+    left: 83px;
+    z-index: 10;
+    width: 76px;
+    height: 76px;
   }
 
   /*OFFERS-HEADING*/
@@ -98,6 +112,16 @@
 
   .cards-content h5 {
     font-size: 15px;
+  }
+
+  .circle {
+    width: 63px;
+    height: 65px;
+  }
+
+  .circle-numbers img {
+    height: 42px;
+    padding-bottom: 12px;
   }
 
   /*FEEDBACK*/
@@ -187,7 +211,15 @@
     padding-bottom: 40px;
   }
 
+  #footer p {
+    font-size: 12px;
+  }
+
   /*COPYRIGHT*/
   #copyright {
     font-size: 12px;
+  }
+
+  .footer-button {
+    width: 40px;
   }
