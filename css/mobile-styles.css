@@ -51,6 +51,15 @@
     margin-bottom: 24px;
   }
 
+  .brand {
+    padding-top: 210px;
+  }
+
+  .brand-style {
+    opacity: 0.5;
+    height: 245px;
+  }
+
   #beingSalesButton {
     left: 83px;
     z-index: 10;
@@ -152,7 +161,6 @@
   }
 
   /*COUNTRIES*/
-
   .parallax-none-text {
     height: 0;
   }

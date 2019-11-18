@@ -105,3 +105,5 @@ addCardsForTest();
 $("#best-offers").on('click', ".offer-card", function(event) {
   $(this).toggleClass("opened");
 });
+
+new universalParallax().init();

@@ -81,28 +81,13 @@ body {
   position: relative;
 }
 
-.big-heading {
-  font-family: "Oswald";
-  font-size: 110px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-transform: uppercase;
+.brand {
+  text-align: center;
 }
 
-.big-message {
-  font-family: "Oswald";
-  font-size: 25px;
-  position: absolute;
-  top: 34%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-transform: lowercase;
-  border-bottom: 1px solid;
-  padding: 18px;
+.brand-style {
+  opacity: 0.4;
+  height: 336px;
 }
 
 .welcome-button {
@@ -328,32 +313,33 @@ body {
   color: #222222;
 }
 
-.parallax {
-  /* The image used */
-  background-image: url('../images/climbing.jpg');
-  /* Full height */
-  height: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.parallax-none-text {
-  /* The image used */
-  background-image: url('../images/island.jpg');
-  /* Full height */
-  height: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.none-text {
+.parallax-container-small {
   height: 400px;
+}
+
+.parallax__container {
+  clip: rect(0, auto, auto, 0);
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -100;
+}
+
+.parallax {
+  position: fixed;
+  top: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  width: 100%;
+  /* BG behaviour */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*FEEDBACK*/
@@ -643,6 +629,7 @@ body {
   display: block !important;
   height: 100%;
   background-color: #0000008f;
+  overflow: scroll;
 }
 
 .offer-description {

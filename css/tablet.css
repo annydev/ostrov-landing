@@ -38,6 +38,14 @@
     padding: 185px;
   }
 
+  .brand {
+    padding-top: 200px;
+  }
+
+  .brand-style {
+    height: 414px;
+  }
+
   /*BEST OFFER*/
   .card-part {
     display: grid;
