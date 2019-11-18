@@ -7,7 +7,7 @@ function scrollToAnchor(hash) {
   if (target.length) {
     $('html,body').animate({
       scrollTop: target.offset().top - headerHeight
-    }, 1000);
+    }, 2000);
     return false;
   }
 }
@@ -102,10 +102,12 @@ function addCardsForTest() {
 
 addCardsForTest();
 
-$(document).on("vclick", ".offer-card", function() {
-  var cardClass = $(this).toggleClass("opened");
+$(document).on("pagecreate","#pageone",function(){
+  $(".offer-description").on("click",function(){
+    $(this).show();
+  });
 });
 
-$(".offer-card").click(function() {
+$(".offer-card").on("click", function() {
   var cardClass = $(this).toggleClass("opened");
 });
