@@ -103,7 +103,7 @@ function addCardsForTest() {
 addCardsForTest();
 
 $(document).ready(function() {
-  $(".offer-card").on('click touchend', function(event) {
+  $(".offer-card").on('click', function(event) {
     event.stopPropagation();
 
     var currentCard = $(this);
