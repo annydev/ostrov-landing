@@ -2,11 +2,12 @@
 
   /*NAVIGATION BAR*/
   .logo {
-    width: 14%;
+    width: 11%;
   }
 
   .ro-ru-elements {
-    font-size: 34px;
+    padding-left: 0;
+    font-size: 25px;
   }
 
   .burger-icon {
@@ -31,5 +32,56 @@
   .left-nav-items {
     margin-bottom: 11px;
     margin-right: 0;
+  }
+
+  /*WELCOME PART*/
+  #welcome-part {
+    padding: 185px;
+  }
+
+  /*BEST OFFER*/
+  .card-part {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .offer-card {
+    height: 230px;
+  }
+
+  /*WHY-CGOOSE-US*/
+  .why-choose-us-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .info-cards {
+    padding: 30px;
+    height: 165px;
+  }
+
+  /*MAP*/
+  .map-part {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px 55px;
+  }
+
+  .send-button {
+    text-align: center;
+    margin: 20px 20px 40px;
+  }
+
+  /*FOOTER*/
+  #footer p {
+    font-size: 11px;
+  }
+
+  .footer-content {
+    padding: 20px 27px;
+  }
+
+  .copyright {
+    font-size: 12px;
   }
 }

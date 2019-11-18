@@ -102,7 +102,7 @@ function addCardsForTest() {
 
 addCardsForTest();
 
-$(document).on("mousedown touchstart", ".offer-card", function() {
+$(document).on("vclick", ".offer-card", function() {
   var cardClass = $(this).toggleClass("opened");
 });
 
