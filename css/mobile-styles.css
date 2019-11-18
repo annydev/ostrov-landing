@@ -152,6 +152,11 @@
   }
 
   /*COUNTRIES*/
+
+  .parallax-none-text {
+    height: 0;
+  }
+
   .none-text {
     height: 252px;
   }
