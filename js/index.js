@@ -102,9 +102,11 @@ function addCardsForTest() {
 
 addCardsForTest();
 
-$('.offer-card').on('touchstart', '.offer-description', function(){
-    $('#filter_wrapper').show();
-});
+$(document).ready(function(){
+   $('.offer-card').vclick(function() {
+       $('#filter_wrapper').show();
+   });
+ });
 
 $(".offer-card").click(function() {
   var cardClass = $(this).toggleClass("opened");
