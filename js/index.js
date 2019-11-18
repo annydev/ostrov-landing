@@ -103,11 +103,7 @@ function addCardsForTest() {
 addCardsForTest();
 
 $(document).ready(function(){
-    $(".offer-card").bind('touchstart', function (event) {
-        var cardClass = $(this.event).toggleClass("opened");
+    $(".offer-card").bind('touchend', function () {
+        var cardClass = $(this).toggleClass("opened");
     });
 });
-
-//$(".offer-card").on("click", function() {
-  //var cardClass = $(this).toggleClass("opened");
-//});
