@@ -102,8 +102,8 @@ function addCardsForTest() {
 
 addCardsForTest();
 
-$('.offer-card').each(function(){
-    this.onclick = function() {};
+$('.offer-card').on('touchstart', '.offer-description', function(){
+    $('#filter_wrapper').show();
 });
 
 $(".offer-card").click(function() {
