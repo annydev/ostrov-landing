@@ -104,7 +104,7 @@ addCardsForTest();
 
 $(document).ready(function(){
    $('.offer-card').vclick(function() {
-       $('#filter_wrapper').show();
+       $('.offer-description').show();
    });
  });
 
