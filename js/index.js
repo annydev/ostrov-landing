@@ -103,7 +103,7 @@ function addCardsForTest() {
 addCardsForTest();
 
 $(document).ready(function() {
-  $(".offer-card").on('click', function(event) {
+  $("#best-offers").on('click', ".offer-card", function(event) {
     event.stopPropagation();
 
     var currentCard = $(this);
