@@ -102,8 +102,10 @@ function addCardsForTest() {
 
 addCardsForTest();
 
-$('.offer-card').each(function(){
-    this.onclick = function() {};
+$(document).bind('pageinit', function(){
+   $('.offer-card').vclick(function() {
+       $('.offer-description').show();
+   });
 });
 
 $(".offer-card").click(function() {
