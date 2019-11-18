@@ -102,11 +102,9 @@ function addCardsForTest() {
 
 addCardsForTest();
 
-$(document).ready(function(){
-   $('.offer-card').vclick(function() {
-       $('.offer-description').show();
-   });
- });
+$('.offer-card').each(function(){
+    this.onclick = function() {};
+});
 
 $(".offer-card").click(function() {
   var cardClass = $(this).toggleClass("opened");
