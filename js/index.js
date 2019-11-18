@@ -102,10 +102,8 @@ function addCardsForTest() {
 
 addCardsForTest();
 
-$(document).bind('pageinit', function(){
-   $('.offer-card').vclick(function() {
-       $('.offer-description').show();
-   });
+$(document).on("mousedown touchstart", ".offer-card", function() {
+  var cardClass = $(this).toggleClass("opened");
 });
 
 $(".offer-card").click(function() {
