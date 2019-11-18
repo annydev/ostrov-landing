@@ -152,6 +152,10 @@
   }
 
   /*COUNTRIES*/
+  .none-text {
+    height: 252px;
+  }
+
   .countries-title {
     padding: 64px 12px 30px;
   }
