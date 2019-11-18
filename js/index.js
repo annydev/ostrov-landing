@@ -102,12 +102,12 @@ function addCardsForTest() {
 
 addCardsForTest();
 
-$(document).on("pagecreate","#pageone",function(){
-  $(".offer-description").on("click",function(){
-    $(this).show();
-  });
+$(document).ready(function(){
+    $(".offer-card").on('click', function () {
+        var cardClass = $(this).toggleClass("opened");
+    });
 });
 
-$(".offer-card").on("click", function() {
-  var cardClass = $(this).toggleClass("opened");
-});
+//$(".offer-card").on("click", function() {
+  //var cardClass = $(this).toggleClass("opened");
+//});
