@@ -104,13 +104,6 @@ addCardsForTest();
 
 $(document).ready(function() {
   $("#best-offers").on('click', ".offer-card", function(event) {
-    event.stopPropagation();
-
-    var currentCard = $(this);
-    if (currentCard.hasClass("opened")) {
-      currentCard.removeClass("opened");
-    } else {
-      currentCard.addClass("opened");
-    }
+    $(this).toggleClass("opened");
   });
 });
