@@ -102,10 +102,10 @@ function addCardsForTest() {
 
 addCardsForTest();
 
-$(".offer-card").click(function() {
-  var cardClass = $(this).toggleClass("opened");
-});
-
 $('.offer-card').each(function(){
     this.onclick = function() {};
+});
+
+$(".offer-card").click(function() {
+  var cardClass = $(this).toggleClass("opened");
 });
