@@ -105,3 +105,9 @@ addCardsForTest();
 $(".offer-card").click(function() {
   var cardClass = $(this).toggleClass("opened");
 });
+
+$(document).ready(function(){
+   $('.offer-card').click(function() {
+       $('#filter_wrapper').show();
+   });
+ });
