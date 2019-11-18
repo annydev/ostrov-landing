@@ -102,8 +102,15 @@ function addCardsForTest() {
 
 addCardsForTest();
 
-$(document).ready(function(){
-    $(".offer-card").bind('touchend', function () {
-        var cardClass = $(this).toggleClass("opened");
-    });
+$(document).ready(function() {
+  $(".offer-card").on('click touchend', function(event) {
+    event.stopPropagation();
+
+    var currentCard = $(this);
+    if (currentCard.hasClass("opened")) {
+      currentCard.removeClass("opened");
+    } else {
+      currentCard.addClass("opened");
+    }
+  });
 });
