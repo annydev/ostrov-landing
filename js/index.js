@@ -102,8 +102,6 @@ function addCardsForTest() {
 
 addCardsForTest();
 
-$(document).ready(function() {
-  $("#best-offers").on('click', ".offer-card", function(event) {
-    $(this).toggleClass("opened");
-  });
+$("#best-offers").on('click', ".offer-card", function(event) {
+  $(this).toggleClass("opened");
 });
