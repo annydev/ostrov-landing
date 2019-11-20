@@ -76,6 +76,7 @@ function appendOffer(value) {
   newOffer.find(".description-title").html(value[6]);
   newOffer.find(".description-body").html(value[7]);
 
+
   $("#best-offers .card-part").append(newOffer);
 
   adjustCards();
@@ -84,19 +85,26 @@ function appendOffer(value) {
 function prepareOffers(values) {
   $("#best-offers .card-part").html("");
 
-  values.forEach(function(value) {
-    appendOffer(value);
+  values.forEach(function(value, index) {
+
+    var today = moment();
+    var newDate = moment(value[0], "DD-MM-YY");
+
+    if (index >= 1 &&  today <= newDate) {
+      appendOffer(value);
+    }
+
   });
 }
 
 function addCardsForTest() {
   prepareOffers([
-    ["10.11.19", "Spain", "Title", "9 days", "3000$", "images/countries/spain.jpg", "Head", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."],
-    ["10.11.19", "Spain", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
-    ["10.11.19", "Spain", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
-    ["10.11.19", "Spain", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
-    ["10.11.19", "Spain", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
-    ["10.11.19", "Spain", "Title", "9 days", "3000$", "images/countries/spain.jpg"]
+    ["15-11-19", "France", "Title", "9 days", "3000$", "images/countries/spain.jpg", "Head", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."],
+    ["25-11-19", "Germany", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
+    ["20-12-19", "Spain", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
+    ["12-11-19", "Ucraine", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
+    ["10-10-19", "Italy", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
+    ["14-11-19", "Luxembourg", "Title", "9 days", "3000$", "images/countries/spain.jpg"]
   ]);
 }
 
