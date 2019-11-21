@@ -131,9 +131,9 @@ $(".form-button").click(function() {
     );
   } else {
     Email.send({
-      SecureToken: "48f03b4e-3869-4762-ad84-fd6ef8e92002",
-      To: "ostrov.md@gmail.com",
-      From: "ostrov.md@gmail.com",
+      SecureToken: "ff91b418-4c40-4b2d-ad39-0e45ade8f842",
+      To: 'dandara.anna13@hotmail.com',
+      From: "dandara.anna13@gmail.com",
       Subject: "Новое сообщение от " + dates.name,
       Body: "<div>Имя: " + dates.name + "</div>" + "<div>Телефон: " + dates.mobile + "</div>" + "<div>Сообщение: " + dates.message + "</div>"
     }).then(
