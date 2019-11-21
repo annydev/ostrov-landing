@@ -131,7 +131,7 @@ $(".form-button").click(function() {
     );
   } else {
     Email.send({
-      SecureToken: "399f8693-c4ce-46da-869c-20379a5bcf45",
+      SecureToken: "d4ab2eba-4abe-4355-bc32-b052fc3ba363",
       To: "ostrov.md@gmail.com",
       From: "ostrov.md@gmail.com",
       Subject: "Новое сообщение от " + dates.name,
