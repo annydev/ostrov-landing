@@ -131,11 +131,11 @@ $(".form-button").click(function() {
     );
   } else {
     Email.send({
-      SecureToken: "ff91b418-4c40-4b2d-ad39-0e45ade8f842",
-      To: 'dandara.anna13@hotmail.com',
-      From: "dandara.anna13@gmail.com",
+      SecureToken: "399f8693-c4ce-46da-869c-20379a5bcf45",
+      To: "ostrov.md@gmail.com",
+      From: "ostrov.md@gmail.com",
       Subject: "Новое сообщение от " + dates.name,
-      Body: "<div>Имя:" + dates.name + "</div>" + "<div>Телефон:" + dates.mobile + "</div>" + "<div>Сообщение:" + dates.message + "</div>"
+      Body: "<div>Имя: " + dates.name + "</div>" + "<div>Телефон: " + dates.mobile + "</div>" + "<div>Сообщение: " + dates.message + "</div>"
     }).then(
       function(message) {
         if(message === "OK"){
