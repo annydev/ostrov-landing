@@ -152,6 +152,10 @@
     margin-right: 0;
   }
 
+  .client-message {
+    height: 148px;
+  }
+
   .icon-type {
     width: 24px;
   }

@@ -67,6 +67,21 @@
     height: 165px;
   }
 
+  /*FEEDBACK*/
+
+  .feedback {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .client-card {
+    padding: 48px;
+  }
+
+  .client-message {
+    height: 204px;
+  }
+
   /*MAP*/
   .map-part {
     display: grid;
