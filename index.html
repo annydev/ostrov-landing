@@ -311,24 +311,24 @@
       <h2>ГДЕ НАС НАЙТИ?</h2>
     </div>
     <div class="container map-part">
-      <form class="">
+      <div id="form">
         <div class="form-title">
           <h4>Ответим на любой ваш вопрос</h4>
         </div>
         <div class="ask-form">
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ваше имя*">
+          <input type="text" name="fName" class="form-control name" id="formGroupExampleInput" placeholder="Ваше имя*">
         </div>
         <div class="ask-form">
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ваш телефон* (Viber / WhatsApp)">
+          <input type="text" name="mobile" class="form-control mobile" id="exampleFormControlInput1" placeholder="Ваш телефон* (Viber / WhatsApp)">
         </div>
         <div class="ask-form">
-          <textarea class="form-control message-area" id="exampleFormControlTextarea1" rows="3" placeholder="Введите*: страну / кол-во человек / даты / категорию отеля или ваш бюджет (Если есть дети,укажите возраст)"></textarea>
+          <textarea class="form-control message-area" name="message" id="exampleFormControlTextarea1" rows="3" placeholder="Введите*: страну / кол-во человек / даты / категорию отеля или ваш бюджет (Если есть дети,укажите возраст)"></textarea>
           <span class="confidential">*Ваши данные не будут опубликованы или переданы третьим лицам</span>
           <div class="send-button">
             <button type="submit" name="button" class="btn btn-warning form-button">Отправить</button>
           </div>
         </div>
-      </form>
+      </div>
       <div class="map-frame">
         <div class="frame-title">
           <h4>Наше месторасположение</h4>
@@ -395,6 +395,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js" integrity="sha256-H9jAz//QLkDOy/nzE9G4aYijQtkLt9FvGmdUTwBk6gs=" crossorigin="anonymous"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 
   <script src="js/universal-parallax.min.js" charset="utf-8"></script>
   <script src="js/google-spreadsheet.js" charset="utf-8"></script>

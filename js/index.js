@@ -90,7 +90,7 @@ function prepareOffers(values) {
     var today = moment();
     var newDate = moment(value[0], "DD-MM-YY");
 
-    if (index >= 1 &&  today <= newDate) {
+    if (index >= 1 && today <= newDate) {
       appendOffer(value);
     }
 
@@ -115,3 +115,27 @@ $("#best-offers").on('click', ".offer-card", function(event) {
 });
 
 new universalParallax().init();
+
+$(".form-button").click(function() {
+  var dates = {
+    name: $("input.name").val(),
+    mobile: $("input.mobile").val(),
+    message: $("textarea.message-area").val()
+  };
+
+  if (!dates.name || !dates.mobile || !dates.message) {
+    alert.error("Please check your data!");
+  } else {
+    Email.send({
+      SecureToken : "9c843d2f-fc1b-4353-a190-53b819ef21d2",
+      To: 'dandara.anna13@hotmail.com',
+      From: "dandara.anna13@gmail.com",
+      Subject: "This is the subject",
+      Body: "And this is the body"
+    }).then(
+      function(message) {
+        console.log(message);
+      }
+    );
+  }
+})
