@@ -124,18 +124,28 @@ $(".form-button").click(function() {
   };
 
   if (!dates.name || !dates.mobile || !dates.message) {
-    alert.error("Please check your data!");
+    Swal.fire(
+      'Oops...',
+      'Заполните все поля',
+      'error'
+    );
   } else {
     Email.send({
-      SecureToken : "ff91b418-4c40-4b2d-ad39-0e45ade8f842",
+      SecureToken: "ff91b418-4c40-4b2d-ad39-0e45ade8f842",
       To: 'dandara.anna13@hotmail.com',
       From: "dandara.anna13@gmail.com",
-      Subject: "This is the subject",
-      Body: "And this is the body"
+      Subject: "Новое сообщение от " + dates.name,
+      Body: "<div>Имя:" + dates.name + "</div>" + "<div>Телефон:" + dates.mobile + "</div>" + "<div>Сообщение:" + dates.message + "</div>"
     }).then(
       function(message) {
-        console.log(message);
+        if(message === "OK"){
+          Swal.fire(
+            'Спасибо',
+            'Ваше сообщение было успешно отправленно',
+            'success'
+          );
+        }
       }
     );
   }
-})
+});
