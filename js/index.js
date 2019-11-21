@@ -127,7 +127,7 @@ $(".form-button").click(function() {
     alert.error("Please check your data!");
   } else {
     Email.send({
-      SecureToken : "9c843d2f-fc1b-4353-a190-53b819ef21d2",
+      SecureToken : "ff91b418-4c40-4b2d-ad39-0e45ade8f842",
       To: 'dandara.anna13@hotmail.com',
       From: "dandara.anna13@gmail.com",
       Subject: "This is the subject",
