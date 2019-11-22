@@ -38,10 +38,6 @@
     padding: 185px;
   }
 
-  .brand {
-    padding-top: 200px;
-  }
-
   .brand-style {
     height: 414px;
   }
@@ -73,7 +69,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  
+
   .client-card {
     padding: 48px;
   }

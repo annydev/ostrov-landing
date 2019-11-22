@@ -82,7 +82,10 @@ body {
 }
 
 .brand {
-  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .brand-style {
@@ -367,7 +370,7 @@ body {
 .icon-type {
   padding-bottom: 20px;
   margin: auto;
-  width: 30px;
+  width: 25px;
 }
 
 .client-card {
@@ -382,6 +385,10 @@ body {
 
 .client-photo {
   padding-bottom: 12px;
+}
+
+.client-name {
+  padding-bottom: 25px;
 }
 
 .client-anchor {
