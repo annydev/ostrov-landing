@@ -192,11 +192,23 @@
 
   /*MAP*/
   .map-title {
-    padding: 95px 12px 67px;
+    display: none;
   }
 
-  .map-title h2 {
+  .title-for-mobile h2 {
+    color: white;
+    text-align: center;
+    font-weight: 700;
     font-size: 25px;
+  }
+
+  .title-for-mobile {
+    display: block !important;
+    padding: 36px 12px 42px;
+  }
+
+  .form-title {
+    padding: 49px 12px 12px;
   }
 
   .map-part {
@@ -225,11 +237,11 @@
   #footer {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 96px 51px;
+    padding: 49px 51px;
   }
 
   .footer-content {
-    padding-bottom: 40px;
+    padding-bottom: 56px;
   }
 
   #footer p {

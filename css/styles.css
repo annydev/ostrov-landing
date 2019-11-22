@@ -87,7 +87,7 @@ body {
 
 .brand-style {
   opacity: 0.4;
-  height: 336px;
+  height: 380px;
 }
 
 .welcome-button {
@@ -464,7 +464,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   background-color: #222222;
   color: #ffffff;
-  padding: 103px 75px;
+  padding: 58px 75px;
 }
 
 #footer p {
@@ -480,6 +480,10 @@ body {
 
 .footer-heading {
   color: #ec9b3b;
+}
+
+.adress.footer-content {
+  padding-top: 78px;
 }
 
 .icon-style {
