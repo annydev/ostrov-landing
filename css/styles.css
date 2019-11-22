@@ -384,6 +384,14 @@ body {
   padding-bottom: 12px;
 }
 
+.client-anchor {
+  color: black;
+}
+
+.client-anchor:hover {
+  text-decoration: none;
+}
+
 .client-round-image {
   height: 124px;
   border-radius: 50%;
