@@ -51,7 +51,6 @@
     margin-bottom: 24px;
   }
 
-
   .brand-style {
     opacity: 0.5;
     height: 245px;
@@ -114,6 +113,10 @@
     padding: 20px;
     margin: 51px 8px;
     height: 148px;
+  }
+
+  .card-title {
+    font-size: 15px;
   }
 
   .circle {

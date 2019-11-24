@@ -310,6 +310,7 @@ body {
 }
 
 .card-title {
+  font-size: 22px;
   text-align: center;
   font-weight: 600;
   color: #222222;
