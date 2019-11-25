@@ -97,19 +97,6 @@ function prepareOffers(values) {
   });
 }
 
-function addCardsForTest() {
-  prepareOffers([
-    ["15-11-19", "France", "Title", "9 days", "3000$", "images/countries/spain.jpg", "Head", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."],
-    ["25-11-19", "Germany", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
-    ["20-12-19", "Spain", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
-    ["12-11-19", "Ucraine", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
-    ["10-10-19", "Italy", "Title", "9 days", "3000$", "images/countries/spain.jpg"],
-    ["14-11-19", "Luxembourg", "Title", "9 days", "3000$", "images/countries/spain.jpg"]
-  ]);
-}
-
-addCardsForTest();
-
 $("#best-offers").on('click', ".offer-card", function(event) {
   $(this).toggleClass("opened");
 });
