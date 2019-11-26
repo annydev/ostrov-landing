@@ -363,8 +363,8 @@ body {
 
 .feedback {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-bottom: 69px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 130px;
 }
 
 .icon-type {
@@ -388,6 +388,7 @@ body {
 }
 
 .client-name {
+  font-size: 15px;
   padding-bottom: 25px;
 }
 
