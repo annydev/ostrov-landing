@@ -161,6 +161,23 @@
   }
 
   /*COUNTRIES*/
+  .countries-slider .MS-content .item {
+    width: 100%;
+    padding: 40px;
+  }
+
+  .countries-slider .MS-controls button {
+    width: 25px;
+  }
+
+  #countries {
+    padding-top: 0;
+  }
+
+  .top-content {
+    margin-bottom: 42px;
+  }
+
   .parallax-none-text {
     height: 0;
   }
@@ -184,6 +201,18 @@
 
   .country-name {
     font-size: 20px;
+  }
+
+  #gallery {
+    padding-bottom: 13px;
+  }
+
+  .gallery-heading {
+    padding: 58px 0 25px;
+  }
+
+  .gallery-heading h2 {
+    font-size: 25px;
   }
 
   /*MAP*/

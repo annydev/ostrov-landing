@@ -231,6 +231,56 @@ body {
 }
 
 /*CAROUSEL*/
+.countries-slider {
+  position: relative;
+  /* recommended */
+}
+
+.countries-slider .MS-content {
+  white-space: nowrap;
+  /* required */
+  overflow: hidden;
+  /* required */
+  margin: 0 5%;
+  /* makes room for L/R arrows */
+}
+
+.countries-slider .MS-content .item {
+  display: inline-block;
+  /* required */
+  width: 20%;
+  /* required * Determines number of visible slides */
+  position: relative;
+  /* required */
+  vertical-align: top;
+  /* required */
+  overflow: hidden;
+  /* required */
+  height: 100%;
+  /* recommended */
+  white-space: normal;
+  /* recommended */
+  padding: 5px;
+}
+
+.countries-slider .MS-controls button {
+  position: absolute;
+  /* recommended */
+  top: 43%;
+  border: none;
+  background: none;
+  width: 40px;
+  opacity: 0.5;
+}
+
+.countries-slider .MS-controls .MS-left {
+  left: 25px;
+}
+
+.countries-slider .MS-controls .MS-right {
+  right: 25px;
+}
+
 .top-content {
   margin-bottom: 97px;
 }
@@ -244,6 +294,22 @@ body {
   border-radius: 50%;
   width: auto;
   background-size: cover;
+  padding: 50%;
+}
+
+.countries-image:before {
+  position: absolute;
+  border-radius: 50%;
+  content: '';
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-shadow: inset -25px -25px 40px rgba(0, 0, 0, .5);
+  background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 220, .2) 0%, transparent 100%);
+  background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 220, .2) 0%, transparent 100%);
+  background-image: -o-linear-gradient(-45deg, rgba(255, 255, 220, .2) 0%, transparent 100%);
+  background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 220, .2) 0%, transparent 100%);
 }
 
 .country-name {
@@ -252,8 +318,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 37px;
+  font-size: 24px;
   font-weight: 600;
+  text-shadow: 0 0 20px #000000;
+  text-align: center;
 }
 
 /*WHY-CGOOSE-US-HEADING*/
@@ -408,6 +476,60 @@ body {
 .client-icon-fab {
   height: 22px;
   margin-right: 6px;
+}
+
+/*GALLERY*/
+#gallery {
+  padding-bottom: 53px;
+}
+
+.gallery-heading {
+  padding: 100px 0 35px;
+  text-align: center;
+}
+
+.gallery-heading h2 {
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.gallery {
+  margin-bottom: 74px;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+}
+
+.gallery a {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.gallery a img {
+  margin-bottom: 15px;
+  border-radius: 40px;
+  box-shadow: 0 0px 5px 1px #adb5bd;
+}
+
+@media (max-width: 450px) {
+  .gallery {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+
+  .gallery a img {
+    border-radius: 20px;
+  }
 }
 
 /*MAP HEADING*/

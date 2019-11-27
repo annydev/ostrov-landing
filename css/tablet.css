@@ -78,6 +78,20 @@
     height: 204px;
   }
 
+  /*COUNTRIES*/
+  .countries-slider .MS-content {
+    margin: 0 10%;
+  }
+
+  .countries-slider .MS-content .item {
+    width: 33.333%;
+    padding: 10px;
+  }
+
+  .countries-slider .MS-controls button {
+    width: 35px;
+  }
+
   /*MAP*/
   .map-part {
     display: grid;
