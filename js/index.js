@@ -1,30 +1,61 @@
 var IndexModule = (function() {
   var self = this;
 
-  self.Init = function() {
-    function scrollToAnchor(hash) {
-      var target = $(hash);
-      var headerHeight = $(".navigation-bar").height() + 5; // Get fixed header height
+  function appendOffer(value) {
+    var newOffer = $($("#offersTemplate").html());
 
-      target = target.length ? target : $('[name=' + hash.slice(1) + ']');
+    newOffer.find(".best-offer-country").html(value[1]);
+    newOffer.find(".best-offer-title").html(value[2]);
+    newOffer.find(".best-offer-days").html(value[3]);
+    newOffer.find(".best-offer-price").html(value[4]);
+    newOffer.attr("style", "background-image:" + "url(" + value[5] + ")");
+    newOffer.find(".description-title").html(value[6]);
+    newOffer.find(".description-body").html(value[7]);
 
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top - headerHeight
-        }, 2000);
-        return false;
+    $("#best-offers .card-part").append(newOffer);
+
+    adjustCards();
+  }
+
+  function scrollToAnchor(hash) {
+    var target = $(hash);
+    var headerHeight = $(".navigation-bar").height() + 5; // Get fixed header height
+
+    target = target.length ? target : $('[name=' + hash.slice(1) + ']');
+
+    if (target.length) {
+      $('html,body').animate({
+        scrollTop: target.offset().top - headerHeight
+      }, 2000);
+      return false;
+    }
+  }
+
+  function adjustCards() {
+    $(".offer-card").each(function() {
+      var currentElement = $(this);
+      var elementWidth = currentElement.width();
+
+      currentElement.css("height", elementWidth);
+    });
+  }
+
+  self.PrepareOffers = function(values) {
+    $("#best-offers .card-part").html("");
+
+    values.forEach(function(value, index) {
+
+      var today = moment();
+      var newDate = moment(value[0], "DD-MM-YY");
+
+      if (index >= 1 && today <= newDate) {
+        appendOffer(value);
       }
-    }
 
-    function adjustCards() {
-      $(".offer-card").each(function() {
-        var currentElement = $(this);
-        var elementWidth = currentElement.width();
+    });
+  };
 
-        currentElement.css("height", elementWidth);
-      });
-    }
-
+  self.Init = function() {
     $(document).scroll(function() {
       var $nav = $(".navigation-bar");
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
@@ -42,38 +73,6 @@ var IndexModule = (function() {
 
     if (window.location.hash) {
       scrollToAnchor(window.location.hash);
-    }
-
-    function appendOffer(value) {
-      var newOffer = $($("#offersTemplate").html());
-
-      newOffer.find(".best-offer-country").html(value[1]);
-      newOffer.find(".best-offer-title").html(value[2]);
-      newOffer.find(".best-offer-days").html(value[3]);
-      newOffer.find(".best-offer-price").html(value[4]);
-      newOffer.attr("style", "background-image:" + "url(" + value[5] + ")");
-      newOffer.find(".description-title").html(value[6]);
-      newOffer.find(".description-body").html(value[7]);
-
-
-      $("#best-offers .card-part").append(newOffer);
-
-      adjustCards();
-    }
-
-    function prepareOffers(values) {
-      $("#best-offers .card-part").html("");
-
-      values.forEach(function(value, index) {
-
-        var today = moment();
-        var newDate = moment(value[0], "DD-MM-YY");
-
-        if (index >= 1 && today <= newDate) {
-          appendOffer(value);
-        }
-
-      });
     }
 
     $("#best-offers").on('click', ".offer-card", function(event) {
