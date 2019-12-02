@@ -1,16 +1,30 @@
 var IndexModule = (function() {
   var self = this;
+  var language = 'ru';
 
   function appendOffer(value) {
     var newOffer = $($("#offersTemplate").html());
 
-    newOffer.find(".best-offer-country").html(value[1]);
-    newOffer.find(".best-offer-title").html(value[2]);
-    newOffer.find(".best-offer-days").html(value[3]);
-    newOffer.find(".best-offer-price").html(value[4]);
-    newOffer.attr("style", "background-image:" + "url(" + value[5] + ")");
-    newOffer.find(".description-title").html(value[6]);
-    newOffer.find(".description-body").html(value[7]);
+    newOffer.find(".best-offer-price").html(value[7]);
+    newOffer.attr("style", "background-image:" + "url(" + value[8] + ")");
+
+    switch (language) {
+      case 'ru':
+        newOffer.find(".best-offer-country").html(value[1]);
+        newOffer.find(".best-offer-title").html(value[3]);
+        newOffer.find(".best-offer-days").html(value[5]);
+        newOffer.find(".description-title").html(value[9]);
+        newOffer.find(".description-body").html(value[11]);
+        break;
+
+      case 'ro':
+        newOffer.find(".best-offer-country").html(value[2]);
+        newOffer.find(".best-offer-title").html(value[4]);
+        newOffer.find(".best-offer-days").html(value[6]);
+        newOffer.find(".description-title").html(value[10]);
+        newOffer.find(".description-body").html(value[12]);
+        break;
+    }
 
     $("#best-offers .card-part").append(newOffer);
 
@@ -55,7 +69,9 @@ var IndexModule = (function() {
     });
   };
 
-  self.Init = function() {
+  self.Init = function(lang) {
+    language = lang;
+
     $(document).scroll(function() {
       var $nav = $(".navigation-bar");
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
@@ -120,8 +136,4 @@ var IndexModule = (function() {
   };
 
   return self;
-})();
-
-(function() {
-  IndexModule.Init();
 })();
